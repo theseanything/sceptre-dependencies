@@ -1,0 +1,92 @@
+[2017-06-21 16:22:44] - sceptre.environment - Initialising 'test1' environment...
+[2017-06-21 16:22:44] - sceptre.config - Reading in 'config.yaml' files...
+[2017-06-21 16:22:44] - sceptre.config - Config: {'region': 'eu-west-1', 'dependencies': [], 'project_code': 'dependency-test'}
+[2017-06-21 16:22:44] - sceptre.environment - Initialising stack 'test1/stack'
+[2017-06-21 16:22:44] - sceptre.environment - Initialising 'test2' environment...
+[2017-06-21 16:22:44] - sceptre.config - Reading in 'config.yaml' files...
+[2017-06-21 16:22:44] - sceptre.config - Config: {'region': 'eu-west-1', 'dependencies': [], 'project_code': 'dependency-test'}
+[2017-06-21 16:22:44] - sceptre.environment - Initialising stack 'test2/stack'
+[2017-06-21 16:22:44] - sceptre.environment - Launching environment '.'
+[2017-06-21 16:22:44] - sceptre.stack - test1/stack - Loading dependencies...
+[2017-06-21 16:22:44] - sceptre.config - Adding resolver yaml constructors
+[2017-06-21 16:22:44] - sceptre.config - Added constructor for <class 'project_variables.ProjectVariables'> with node tag !project_variables
+[2017-06-21 16:22:44] - sceptre.config - Added constructor for <class 'stack_output.StackOutput'> with node tag !stack_output
+[2017-06-21 16:22:44] - sceptre.config - Added constructor for <class 'file_contents.FileContents'> with node tag !file_contents
+[2017-06-21 16:22:44] - sceptre.config - Added constructor for <class 'environment_variable.EnvironmentVariable'> with node tag !environment_variable
+[2017-06-21 16:22:44] - sceptre.config - Added constructor for <class 'stack_output.StackOutputExternal'> with node tag !stack_output_external
+[2017-06-21 16:22:44] - sceptre.config - Adding hook yaml constructors
+[2017-06-21 16:22:44] - sceptre.config - Added constructor for <class 'asg_scheduled_actions.ASGScheduledActions'> with node tag !asg_scheduled_actions
+[2017-06-21 16:22:44] - sceptre.config - Added constructor for <class 'bash.Bash'> with node tag !bash
+[2017-06-21 16:22:44] - sceptre.config - Added constructor for <class 'asg_scaling_processes.ASGScalingProcesses'> with node tag !asg_scaling_processes
+[2017-06-21 16:22:44] - sceptre.config - Reading in 'stack.yaml' files...
+[2017-06-21 16:22:44] - sceptre.stack - test2/stack - Loading dependencies...
+[2017-06-21 16:22:44] - sceptre.config - Config: {'dependencies': [], 'template_path': 'cloudformation/test.yaml', 'parameters': {'TestParam': 'test1'}}
+[2017-06-21 16:22:44] - sceptre.stack - test1/stack - Dependencies: set([])
+[2017-06-21 16:22:44] - sceptre.config - Adding resolver yaml constructors
+[2017-06-21 16:22:44] - sceptre.config - Added constructor for <class 'project_variables.ProjectVariables'> with node tag !project_variables
+[2017-06-21 16:22:44] - sceptre.config - Added constructor for <class 'stack_output.StackOutput'> with node tag !stack_output
+[2017-06-21 16:22:44] - sceptre.config - Added constructor for <class 'file_contents.FileContents'> with node tag !file_contents
+[2017-06-21 16:22:44] - sceptre.config - Added constructor for <class 'environment_variable.EnvironmentVariable'> with node tag !environment_variable
+[2017-06-21 16:22:44] - sceptre.config - Added constructor for <class 'stack_output.StackOutputExternal'> with node tag !stack_output_external
+[2017-06-21 16:22:44] - sceptre.config - Adding hook yaml constructors
+[2017-06-21 16:22:44] - sceptre.config - Added constructor for <class 'asg_scheduled_actions.ASGScheduledActions'> with node tag !asg_scheduled_actions
+[2017-06-21 16:22:44] - sceptre.config - Added constructor for <class 'bash.Bash'> with node tag !bash
+[2017-06-21 16:22:44] - sceptre.config - Added constructor for <class 'asg_scaling_processes.ASGScalingProcesses'> with node tag !asg_scaling_processes
+[2017-06-21 16:22:44] - sceptre.config - Reading in 'stack.yaml' files...
+[2017-06-21 16:22:44] - sceptre.config - Config: {'dependencies': [u'test1/stack'], 'template_path': 'cloudformation/test.yaml', 'parameters': {'TestParam': <stack_output.StackOutput object at 0x10e2c5750>}}
+[2017-06-21 16:22:44] - sceptre.stack - test2/stack - Dependencies: set([u'test1/stack'])
+[2017-06-21 16:22:44] - sceptre.environment - Checking for circular dependencies...
+[2017-06-21 16:22:44] - sceptre.environment - No circular dependencies found
+[2017-06-21 16:22:44] - sceptre.stack - test1/stack - Launching stack
+[2017-06-21 16:22:44] - sceptre.connection_manager - No cloudformation client found, creating one...
+[2017-06-21 16:22:44] - sceptre.connection_manager - Getting Boto3 session
+[2017-06-21 16:22:44] - sceptre.connection_manager - No Boto3 session found, creating one...
+[2017-06-21 16:22:44] - sceptre.connection_manager - Using cli credentials...
+[2017-06-21 16:22:44] - sceptre.stack - test2/stack - Launching stack
+[2017-06-21 16:22:44] - sceptre.connection_manager - Using credential set from shared-credentials-file: {'SecretAccessKey': u'************************************bRlh', 'Region': 'eu-west-1', 'AccessKeyId': u'****************3DZQ'}
+[2017-06-21 16:22:44] - sceptre.connection_manager - Boto3 session created
+[2017-06-21 16:22:44] - sceptre.connection_manager - No cloudformation client found, creating one...
+[2017-06-21 16:22:44] - sceptre.connection_manager - Getting Boto3 session
+[2017-06-21 16:22:44] - sceptre.connection_manager - No Boto3 session found, creating one...
+[2017-06-21 16:22:44] - sceptre.connection_manager - Using cli credentials...
+[2017-06-21 16:22:44] - sceptre.connection_manager - Using credential set from shared-credentials-file: {'SecretAccessKey': u'************************************bRlh', 'Region': 'eu-west-1', 'AccessKeyId': u'****************3DZQ'}
+[2017-06-21 16:22:44] - sceptre.connection_manager - Boto3 session created
+[2017-06-21 16:22:44] - sceptre.stack - test1/stack - Stack is in the PENDING state
+[2017-06-21 16:22:45] - sceptre.stack - None - Loading hooks...
+[2017-06-21 16:22:45] - sceptre.stack - test1/stack - Hooks: {}
+[2017-06-21 16:22:45] - sceptre.stack - test1/stack - Creating stack
+[2017-06-21 16:22:45] - sceptre.template - test - Opening file /Users/neelradhakrishnan/ft/sceptre-test/cloudformation/test.yaml
+[2017-06-21 16:22:45] - sceptre.stack - test2/stack - Stack is in the PENDING state
+[2017-06-21 16:22:45] - sceptre.stack - None - Loading hooks...
+[2017-06-21 16:22:45] - sceptre.stack - test2/stack - Hooks: {}
+[2017-06-21 16:22:45] - sceptre.stack - test2/stack - Creating stack
+[2017-06-21 16:22:45] - sceptre.resolvers - Resolving stack output: test1/stack::TestOutput
+[2017-06-21 16:22:45] - sceptre.resolvers - Collecting outputs from 'dependency-test-test1-stack'...
+[2017-06-21 16:22:45] - sceptre.environment - Stack test2/stack failed to launch
+Traceback (most recent call last):
+  File "/Users/neelradhakrishnan/ft/sceptre/sceptre/environment.py", line 244, in _manage_stack_build
+    status = getattr(stack, command)()
+  File "/Users/neelradhakrishnan/ft/sceptre/sceptre/stack.py", line 274, in launch
+    status = self.create()
+  File "/Users/neelradhakrishnan/ft/sceptre/sceptre/hooks/__init__.py", line 70, in decorated
+    response = func(self, *args, **kwargs)
+  File "/Users/neelradhakrishnan/ft/sceptre/sceptre/stack.py", line 194, in create
+    "Parameters": self._format_parameters(self.parameters),
+  File "/Users/neelradhakrishnan/ft/sceptre/sceptre/resolvers/__init__.py", line 72, in __get__
+    return self.resolve_values(getattr(instance, self.name))
+  File "/Users/neelradhakrishnan/ft/sceptre/sceptre/resolvers/__init__.py", line 91, in resolve_values
+    attr[key] = value.resolve()
+  File "/Users/neelradhakrishnan/ft/sceptre/sceptre/resolvers/stack_output.py", line 119, in resolve
+    return self._get_output_value(stack_name, self.output_key)
+  File "/Users/neelradhakrishnan/ft/sceptre/sceptre/resolvers/stack_output.py", line 34, in _get_output_value
+    outputs = self._get_stack_outputs(stack_name)
+  File "/Users/neelradhakrishnan/ft/sceptre/sceptre/resolvers/stack_output.py", line 67, in _get_stack_outputs
+    raise StackDoesNotExistError(e.response["Error"]["Message"])
+StackDoesNotExistError: Stack with id dependency-test-test1-stack does not exist
+[2017-06-21 16:22:45] - sceptre.stack - test1/stack - Create stack response: {u'StackId': 'arn:aws:cloudformation:eu-west-1:580501780015:stack/dependency-test-test1-stack/78c91790-5695-11e7-9393-500c4266c6d2', 'ResponseMetadata': {'RetryAttempts': 0, 'HTTPStatusCode': 200, 'RequestId': '78c1776f-5695-11e7-82f3-0d285c78b893', 'HTTPHeaders': {'x-amzn-requestid': '78c1776f-5695-11e7-82f3-0d285c78b893', 'date': 'Wed, 21 Jun 2017 15:22:43 GMT', 'content-length': '397', 'content-type': 'text/xml'}}}
+[2017-06-21 16:22:45] - sceptre.stack - 2017-06-21T15:22:43+00:00 test1/stack dependency-test-test1-stack AWS::CloudFormation::Stack CREATE_IN_PROGRESS User Initiated
+[2017-06-21 16:22:53] - sceptre.stack - 2017-06-21T15:22:47+00:00 test1/stack TestResource AWS::SNS::Topic CREATE_IN_PROGRESS
+[2017-06-21 16:22:53] - sceptre.stack - 2017-06-21T15:22:49+00:00 test1/stack TestResource AWS::SNS::Topic CREATE_IN_PROGRESS Resource creation Initiated
+[2017-06-21 16:23:06] - sceptre.stack - 2017-06-21T15:23:01+00:00 test1/stack TestResource AWS::SNS::Topic CREATE_COMPLETE
+[2017-06-21 16:23:06] - sceptre.stack - 2017-06-21T15:23:04+00:00 test1/stack dependency-test-test1-stack AWS::CloudFormation::Stack CREATE_COMPLETE
+[2017-06-21 16:23:14] - sceptre.stack - test1/stack - Hooks: {}

@@ -1,0 +1,21 @@
+---
+AWSTemplateFormatVersion: 2010-09-09
+
+Parameters:
+
+  TestParam:
+    Type: String
+
+Resources:
+
+  TestResource:
+    Type: "AWS::SNS::Topic"
+    Properties:
+      DisplayName: !Ref TestParam
+
+Outputs:
+
+  TestOutput:
+    Value: !Ref TestResource
+
+

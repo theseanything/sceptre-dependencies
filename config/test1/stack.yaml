@@ -1,0 +1,3 @@
+template_path: cloudformation/test.yaml
+parameters:
+  TestParam: test1
